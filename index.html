@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Howari - UI/UX Designer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-purple-900 via-purple-800 to-pink-800 min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black bg-opacity-20 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo and Desktop Navigation -->
+                <div class="flex items-center space-x-8">
+                    <!-- Logo -->
+                    <div class="text-2xl font-bold text-white">
+                        <span class="text-gradient">Sara</span> Howari
+                    </div>
+                    
+                    <!-- Desktop Navigation Links - Hidden on mobile -->
+                    <div class="hidden lg:flex space-x-8">
+                        <a href="#home" class="text-white hover:text-purple-300 transition-colors">Home</a>
+                        <a href="#about" class="text-white hover:text-purple-300 transition-colors">About</a>
+                        <a href="#services" class="text-white hover:text-purple-300 transition-colors">Services</a>
+                        <a href="#projects" class="text-white hover:text-purple-300 transition-colors">Projects</a>
+                        <a href="#contact" class="text-white hover:text-purple-300 transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Desktop Contact Button - Hidden on mobile -->
+                <div class="hidden lg:block">
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition-colors">
+                        Contact
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button - Visible only on small devices -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-purple-300 transition-colors focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="lg:hidden hidden bg-black bg-opacity-90 backdrop-blur-md rounded-lg mt-2">
+                <div class="py-4 px-4 space-y-4">
+                    <a href="#home" class="block text-white hover:text-purple-300 transition-colors py-2">Home</a>
+                    <a href="#about" class="block text-white hover:text-purple-300 transition-colors py-2">About</a>
+                    <a href="#services" class="block text-white hover:text-purple-300 transition-colors py-2">Services</a>
+                    <a href="#projects" class="block text-white hover:text-purple-300 transition-colors py-2">Projects</a>
+                    <a href="#contact" class="block text-white hover:text-purple-300 transition-colors py-2">Contact</a>
+                    <div class="pt-4">
+                        <button class="w-full bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition-colors">
+                            Contact
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="space-y-6">
+                    <p class="text-purple-300 text-sm font-medium">WELCOME TO MY WORLD!</p>
+                    <h1 class="text-4xl lg:text-6xl font-bold text-white">
+                        Hi, I'm <span class="text-purple-400">Sara Howari</span>
+                    </h1>
+                    <h2 class="text-3xl lg:text-5xl font-bold text-purple-400">UI&UX Designer</h2>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Your creative UI/UX designer passionate about transforming ideas into intuitive digital experiences. 
+                        I specialize in creating user-centered designs that not only look beautiful but also provide seamless functionality.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full transition-colors">
+                            My Projects
+                        </button>
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full transition-colors">
+                            Download CV
+                        </button>
+                    </div>
+                    <div class="flex space-x-4">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin text-white"></i>
+                        </div>
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                            <i class="fab fa-behance text-white"></i>
+                        </div>
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                            <i class="fab fa-dribbble text-white"></i>
+                        </div>
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                            <i class="fab fa-github text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content - 3D Avatar Area -->
+                <div class="relative">
+                    <div class="relative z-10">
+                        <!-- 3D Avatar with Profile Image -->
+                        <div class="w-80 h-80 mx-auto bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center p-2 image-glow">
+                            <div class="w-72 h-72 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full overflow-hidden">
+                                <img src="/image/profile.jpeg" alt="Sara Howari - UI/UX Designer" class="w-full h-full object-cover profile-image">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating 3D Shapes -->
+                    <div class="absolute top-10 left-10 w-8 h-8 bg-purple-400 rounded-lg transform rotate-45 animate-float"></div>
+                    <div class="absolute top-20 right-20 w-6 h-6 bg-pink-400 rounded-full animate-float-delayed"></div>
+                    <div class="absolute bottom-20 left-20 w-10 h-10 bg-purple-300 rounded-lg transform rotate-12 animate-float"></div>
+                    <div class="absolute bottom-10 right-10 w-4 h-4 bg-pink-300 rounded-full animate-float-delayed"></div>
+                    
+                    <!-- Glowing Lines -->
+                    <div class="absolute top-0 left-0 w-full h-full">
+                        <div class="absolute top-1/4 left-1/4 w-32 h-1 bg-purple-400 opacity-30 transform rotate-45"></div>
+                        <div class="absolute top-3/4 right-1/4 w-24 h-1 bg-pink-400 opacity-30 transform -rotate-45"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-gradient-to-br from-purple-900 to-purple-800 rounded-3xl p-8 lg:p-12 shadow-2xl">
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <!-- Profile Picture -->
+                    <div class="flex justify-center lg:justify-start">
+                        <div class="relative">
+                            <div class="w-64 h-64 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center p-3 image-glow">
+                                <div class="w-56 h-56 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full overflow-hidden">
+                                    <img src="image/about.jpeg" alt="Sara Howari - About Me" class="w-full h-full object-cover about-profile-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- About Text -->
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-bold text-white">About me</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            Welcome to my portfolio! I'm Sara Howari, a passionate UI/UX designer with extensive experience 
+                            in creating intuitive and engaging digital experiences. I specialize in user research, prototyping, 
+                            and crafting designs that enhance user experience across web and mobile platforms.
+                        </p>
+                        
+                        <!-- Skills -->
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-4">Skills</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <div class="bg-purple-600 px-4 py-2 rounded-lg">
+                                    <span class="text-white font-medium">Figma</span>
+                                </div>
+                                <div class="bg-purple-600 px-4 py-2 rounded-lg">
+                                    <span class="text-white font-medium">XD</span>
+                                </div>
+                                <div class="bg-purple-600 px-4 py-2 rounded-lg">
+                                    <span class="text-white font-medium">AI</span>
+                                </div>
+                                <div class="bg-purple-600 px-4 py-2 rounded-lg">
+                                    <span class="text-white font-medium">PS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Services</h2>
+            <p class="text-gray-300 text-lg mb-12">Transforming ideas into intuitive digital experiences.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service Card 1 -->
+                <div class="bg-gradient-to-br from-purple-900 to-purple-800 rounded-2xl p-6 border border-purple-600 hover:border-purple-400 transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-book-open text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">UI/UX</h3>
+                    <p class="text-gray-300 text-sm">Creating intuitive and visually appealing designs that enhance user experience.</p>
+                </div>
+                
+                <!-- Service Card 2 (Highlighted) -->
+                <div class="bg-gradient-to-br from-purple-600 to-purple-500 rounded-2xl p-6 border border-purple-400 transform scale-105">
+                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-globe text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Web Design</h3>
+                    <p class="text-white text-sm">Developing responsive and engaging websites tailored to user needs.</p>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="bg-gradient-to-br from-purple-900 to-purple-800 rounded-2xl p-6 border border-purple-600 hover:border-purple-400 transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">App Design</h3>
+                    <p class="text-gray-300 text-sm">Crafting innovative and user-friendly mobile app interfaces.</p>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="bg-gradient-to-br from-purple-900 to-purple-800 rounded-2xl p-6 border border-purple-600 hover:border-purple-400 transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-sitemap text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Prototyping & Wireframing</h3>
+                    <p class="text-gray-300 text-sm">Building interactive prototypes and structured wireframes for better design flow.</p>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="flex justify-center items-center space-x-4 mt-12">
+                <div class="w-3 h-3 bg-gray-600 rounded-full"></div>
+                <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+                <div class="w-3 h-3 bg-gray-600 rounded-full"></div>
+                <button class="ml-8 text-white hover:text-purple-300 transition-colors">
+                    <i class="fas fa-arrow-right text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-white text-center mb-4">My Projects</h2>
+            <p class="text-gray-300 text-lg text-center mb-12">Discover the projects that showcase my passion for design and innovation.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gradient-to-br from-purple-900 to-purple-800 rounded-2xl p-6 border border-purple-600 hover:border-purple-400 transition-all duration-300">
+                    <div class="w-full h-48 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl mb-4 flex items-center justify-center">
+                        <i class="fas fa-laptop text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">E-Commerce Platform</h3>
+                    <p class="text-gray-300 text-sm mb-4">A modern e-commerce website with intuitive user interface and seamless shopping experience.</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-purple-600 px-3 py-1 rounded-full text-white text-xs">UI/UX</span>
+                        <span class="bg-purple-600 px-3 py-1 rounded-full text-white text-xs">Web Design</span>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="bg-gradient-to-br from-purple-900 to-purple-800 rounded-2xl p-6 border border-purple-600 hover:border-purple-400 transition-all duration-300">
+                    <div class="w-full h-48 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl mb-4 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Fitness App</h3>
+                    <p class="text-gray-300 text-sm mb-4">A comprehensive fitness tracking mobile application with personalized workout plans.</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-purple-600 px-3 py-1 rounded-full text-white text-xs">App Design</span>
+                        <span class="bg-purple-600 px-3 py-1 rounded-full text-white text-xs">Prototyping</span>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3 -->
+                <div class="bg-gradient-to-br from-purple-900 to-purple-800 rounded-2xl p-6 border border-purple-600 hover:border-purple-400 transition-all duration-300">
+                    <div class="w-full h-48 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl mb-4 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-white text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Analytics Dashboard</h3>
+                    <p class="text-gray-300 text-sm mb-4">A data visualization dashboard with interactive charts and real-time analytics.</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-purple-600 px-3 py-1 rounded-full text-white text-xs">UI/UX</span>
+                        <span class="bg-purple-600 px-3 py-1 rounded-full text-white text-xs">Wireframing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-br from-purple-900 to-purple-800 rounded-3xl p-8 lg:p-12 shadow-2xl">
+                <h2 class="text-4xl font-bold text-white text-center mb-8">Get In Touch</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-semibold text-white">Let's work together</h3>
+                        <p class="text-gray-300">
+                            Ready to bring your ideas to life? I'd love to hear about your project and discuss how we can create something amazing together.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white font-medium">Email</p>
+                                    <p class="text-gray-300">sara.howari@example.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white font-medium">Phone</p>
+                                    <p class="text-gray-300">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full bg-purple-800 border border-purple-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-400">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full bg-purple-800 border border-purple-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-400">
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="4" class="w-full bg-purple-800 border border-purple-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-purple-400"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Sponsor Footer -->
+    <footer class="py-12 px-4 bg-gradient-to-r from-purple-900 to-pink-900 border-t border-purple-800">
+         <div class="text-center">
+                <div class="border-t border-purple-700 pt-6">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2024 Sara Howari. All rights reserved. | 
+                        <span class="text-purple-300">Developed by Dev Sahadat</span>
+                    </p>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
