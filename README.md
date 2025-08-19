@@ -2,6 +2,14 @@
 
 A modern, responsive portfolio website built with HTML, CSS, JavaScript, and Tailwind CSS. This portfolio showcases the work and skills of Sara Howari, a UI/UX designer.
 
+## 👨‍💻 Developer
+
+**Developed with ❤️ by [Dev Sahadat](https://github.com/devwithsahadat)**
+
+- **Full Stack Developer**
+- **Specialized in:** Modern Web Development, UI/UX Design, Responsive Design
+- **Contact:** [GitHub](https://github.com/devwithsahadat) | [LinkedIn](https://www.linkedin.com/in/devwithsahadat/) | [Email](mailto:fiverrprince34@gmail.com)
+
 ## 🎨 Features
 
 - **Modern Design**: Dark theme with purple and pink gradients
@@ -244,4 +252,31 @@ If you need help with this portfolio website:
 
 ---
 
-**Created with ❤️ for showcasing creative work and professional skills.**
+## 👨‍💻 About the Developer
+
+### Dev Sahadat
+**Full Stack Developer & UI/UX Designer**
+
+A passionate developer who specializes in creating modern, responsive web applications with beautiful user interfaces and seamless user experiences.
+
+#### Skills & Expertise:
+- **Frontend:** HTML5, CSS3, JavaScript, React, Vue.js, Tailwind CSS
+- **Backend:** Node.js, Python, PHP, MySQL, MongoDB
+- **Design:** UI/UX Design, Figma, Adobe XD, Responsive Design
+- **Tools:** Git, VS Code, Webpack, Docker
+
+#### Services Offered:
+- 🚀 **Fast Development** - Quick and efficient web development solutions
+- 📱 **Responsive Design** - Perfect on all devices and screen sizes  
+- 🛡️ **Quality Code** - Clean, maintainable, and optimized code
+- 🎨 **UI/UX Design** - Beautiful and intuitive user interfaces
+
+#### Get in Touch:
+- **GitHub:** [@devwithsahadat](https://github.com/devwithsahadat)
+- **LinkedIn:** [Dev Sahadat](https://www.linkedin.com/in/devwithsahadat/)
+- **Email:** fiverrprince34@gmail.com
+- **Portfolio:** [developersahadat.vercel.app](https://developersahadat.vercel.app/)
+
+---
+
+**Created with ❤️ by Dev Sahadat for showcasing creative work and professional skills.**
